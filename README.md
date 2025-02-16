@@ -1,3 +1,5 @@
+https://spotifyalura.netlify.app/
+
 <h1>Sobre 🎵</h1>
 <p>Este projeto web, inspirado no popular serviço de streaming de música Spotify. Desenvolvido com as tecnologia - HTML, CSS, JavaScript e Json - o projeto busca recriar
   a interface intuitiva do Spotify com algumas alterações, principalmente no layout mobile. O projeto foi desenvolvido a partir do curso da Alura, o Imersão Front - End, 
