@@ -1,0 +1,242 @@
+/*Estilos Spotify - Imersão Front-End
+Dev.Luan Freire*/
+
+/*Variaveis, Importações e Configurações*/
+
+/*Importações*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Ajustes*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Padrões*/
+:root {
+    --font-main: "Roboto", serif;
+    --cinza-color: #121212;
+    --font-color: #b3b3b3;
+}
+
+body {
+    background-color: #000;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0.75rem;
+    width: 22vw;
+}
+
+.sidebar_navigation {
+    background-color: var(--cinza-color);
+    border-radius: 8px;
+    padding: 1rem;
+
+    ul {
+        list-style: none;
+        margin-top: 1.25rem;
+    }
+
+    li {
+        padding: 0.63rem;
+    }
+
+    i {
+        padding-right: 0.50rem;
+    }
+}
+
+.sidebar_navigation a {
+    text-decoration: none;
+    font-family: var(--font-main);
+    font-size: 1.13rem;
+    font-weight: bold;
+    color: var(--font-color);
+}
+
+.sidebar_navigation a:hover {
+    color: #fff;
+}
+
+.logo img {
+    width: 7.50rem;
+}
+
+/*Menu Lateral Biblioteca*/
+
+.library {
+    background-color: #121212;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0.63rem;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 0.63rem;
+}
+
+.library_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.library_content button {
+    background-color: transparent;
+    border: 0;
+    font-size: 1rem;
+    font-family: var(--font-main);
+    font-weight: bold;
+    color: var(--font-color);
+    cursor: pointer;
+
+    span {
+        margin-right: 0.50rem;
+    }
+}
+
+.library_content button:hover {
+    color: #fff;
+    font-size: 17px;
+}
+
+/*Botão "+" class "more"*/
+.library_content .more {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.library_content .more:hover {
+    color: #fff;
+}
+
+/*Sugestão de Criar Playlist*/
+
+.create_playlist {
+    margin-top: 1rem;
+    background-color: #303030;
+    border-radius: 8px;
+    padding: 0.63rem;
+    font-family: var(--font-main);
+
+    h3 {
+        color: #fff;
+    }
+
+    h4 {
+        margin-top: 0.50rem;
+    }
+}
+
+.create_playlist button {
+    margin-top: 1.25rem;
+    background-color: #fff;
+    border-radius: 50px;
+    border: 0;
+    padding: 0.63rem;
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*Cookies e Linguagem*/
+
+.cookies_language {
+    margin: 1.88rem 0.63rem;
+    width: 0;
+
+    p {
+        font-family: var(--font-main);
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        color: var(--font-color);
+    }
+
+    p:hover {
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+
+.cookies_language button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: transparent;
+    color: #fff;
+    font-family: var(--font-main);
+    font-size: 16px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 15vw;
+
+    .bi {
+        margin-right: 0.50rem;
+    }
+}
+
+/*Footer*/
+
+.bg_footer {
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+    background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+    width: 100vw;
+    height: auto;
+}
+
+.footer_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-main);
+    color: #fff;
+}
+
+.footer_header i {
+    cursor: pointer;
+    color: #fff;
+}
+
+.footer_main {
+    display: flex;
+    align-items: center;
+}
+
+.footer_main button {
+    margin-left: 2rem;
+    font-size: 16px;
+    font-family: var(--font-main);
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.footer_main button:active {
+    transform: translateY(4px);
+}
+
+.footer_main h4 {
+    font-family: var(--font-main);
+    max-width: 80%;
+    font-weight: bold;
+    color: #fff;
+}

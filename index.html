@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Imersão Front End</title>
+
+    <link rel="stylesheet" href="./src/styles/sidebar_footer.css">
+    <link rel="stylesheet" href="./src/styles/playlist_navigation.css">
+    <link rel="stylesheet" href="./src/styles/search_results.css">
+    <link rel="stylesheet" href="./src/styles/media_queries.css">
+
+</head>
+
+<body>
+    <!--Menu lateral Fixo-->
+    <section class="sidebar">
+        <nav class="sidebar_navigation">
+
+            <!--Logotipo Spotify-->
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/icons/logo-spotify.png" alt="Logotipo Spotify">
+                </a>
+            </div>
+
+            <!--Botões Menu -->
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span>
+                            <i class="bi bi-house-fill"></i>
+                        </span>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" onclick="btn_pesquisar()">
+                        <span>
+                            <i class="bi bi-search"></i>
+                        </span>
+                        <span>Pesquisar</span>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!--Menu Biblioteca-->
+
+        <div class="library">
+            <div class="library_content">
+
+                <button>
+                    <span class="bi bi-collection-play-fill"></span>
+                    <span>Sua Biblioteca</span>
+                </button>
+
+                <span class="bi bi-plus-lg more"></span>
+            </div>
+
+            <!--Crie sua Playlist-->
+            <div class="create_playlist">
+                <h3>Crie sua primeira playlist</h3>
+                <h4>É fácil, vamos te ajudar.</h4>
+
+                <button>
+                    Criar playlist
+                </button>
+            </div>
+
+            <div class="cookies_language">
+
+                <p>Cookies</p>
+                <button class="btn_language">
+                    <span class="bi bi-globe"></span>
+                    <h4>Português do Brasil</h4>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Menu de busca, login-->
+    <main>
+
+        <!--Logotipo para Layout Responsivo-->
+        <div class="logo_responsive">
+            <img src="./assets/icons/logo-spotify.png" alt="Logo Spotify">
+        </div>
+
+
+        <section class="main_navigation">
+
+            <nav class="header_navigation">
+
+                <div class="header_search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="O que você quer ouvir ?" maxlength="200" autocapitalize="off"
+                        id="input_search">
+                </div>
+
+                <hr style="width: 1px; height: 2rem; background-color: #fff; border: none; border-radius: 8px;">
+
+                <div class="header_login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="btn_login">Entrar</button>
+                </div>
+
+            </nav>
+        </section>
+
+        <!--Seção de Cards-->
+        <section class="section_playlist">
+
+            <div class="hidden_view" id="hidden_view">
+
+                <div class="header_playlist">
+
+                    <!--Saudação, função JS-->
+                    <div id="greeting" class="greeting">
+                        <h1></h1>
+                        <span></span>
+                    </div>
+
+                    <h2>Navegar por todas as seções</h2>
+                </div>
+
+                <div class="main_playlist">
+                    <!--COLOCAR CARDS EM UM ARQUIVO .JSON-->
+
+                    <!-- CARD 1 -->
+                    <a href="" class="cards">
+                        <div class="play">
+                            <img src="./assets/playlist/1.jpeg" alt="" />
+                            <i class="bi bi-play-circle-fill player"></i>
+                        </div>
+                        <h3>Boas festas</h3>
+                    </a>
+
+                    <!-- CARD 2 -->
+                    <a href="" class="cards">
+                        <div class="play">
+                            <img src="./assets/playlist/2.png" alt="" />
+                            <i class="bi bi-play-circle-fill player"></i>
+                        </div>
+                        <h3>Feitos para você</h3>
+                    </a>
+
+                    <!-- CARD 3 -->
+                    <a href="" class="cards">
+                        <div class="play">
+                            <img src="./assets/playlist/3.jpeg" alt="" />
+                            <i class="bi bi-play-circle-fill player"></i>
+                        </div>
+                        <h3>Lançamentos</h3>
+                    </a>
+
+                    <!-- CARD 4 -->
+                    <a href="" class="cards">
+                        <div class="play">
+                            <img src="./assets/playlist/4.jpeg" alt="" />
+                            <i class="bi bi-play-circle-fill player"></i>
+                        </div>
+                        <h3>Creators</h3>
+                    </a>
+
+                    <!-- CARD 5 -->
+                    <a href="" class="cards">
+                        <div class="play">
+                            <img src="./assets/playlist/5.jpeg" alt="" />
+                            <i class="bi bi-play-circle-fill player"></i>
+                        </div>
+                        <h3>Para treinar</h3>
+                    </a>
+
+                    <!-- CARD 6 -->
+                    <a href="" class="cards">
+                        <div class="play">
+                            <img src="./assets/playlist/6.jpeg" alt="" />
+                            <i class="bi bi-play-circle-fill player"></i>
+                        </div>
+                        <h3>Podcasts</h3>
+                    </a>
+
+                    <!-- CARD 7 -->
+                    <a href="" class="cards">
+                        <div class="play">
+                            <img src="./assets/playlist/7.jpeg" alt="" />
+                            <i class="bi bi-play-circle-fill player"></i>
+                        </div>
+                        <h3>Sertanejo</h3>
+                    </a>
+
+                    <!-- CARD 8 -->
+                    <a href="" class="cards">
+                        <div class="play">
+                            <img src="./assets/playlist/8.jpeg" alt="" />
+                            <i class="bi bi-play-circle-fill player"></i>
+                        </div>
+                        <h3>Samba e pagode</h3>
+                    </a>
+
+                    <!-- CARD 9 -->
+                    <a href="" class="cards">
+                        <div class="play">
+                            <img src="./assets/playlist/9.jpeg" alt="" />
+                            <i class="bi bi-play-circle-fill player"></i>
+                        </div>
+                        <h3>Funk</h3>
+                    </a>
+
+                    <!-- CARD 10 -->
+                    <a href="" class="cards">
+                        <div class="play">
+                            <img src="./assets/playlist/10.jpeg" alt="" />
+                            <i class="bi bi-play-circle-fill player"></i>
+                        </div>
+                        <h3>MPB</h3>
+                    </a>
+
+                    <!-- CARD 11 -->
+                    <a href="" class="cards">
+                        <div class="play">
+                            <img src="./assets/playlist/11.jpeg" alt="" />
+                            <i class="bi bi-play-circle-fill player"></i>
+                        </div>
+                        <h3>Rock</h3>
+                    </a>
+
+                    <!-- CARD 12 -->
+                    <a href="" class="cards">
+                        <div class="play">
+                            <img src="./assets/playlist/12.jpeg" alt="" />
+                            <i class="bi bi-play-circle-fill player"></i>
+                        </div>
+                        <h3>Hip Hop</h3>
+                    </a>
+
+                    <!-- CARD 13 -->
+                    <a href="" class="cards">
+                        <div class="play">
+                            <img src="./assets/playlist/13.jpeg" alt="" />
+                            <i class="bi bi-play-circle-fill player"></i>
+                        </div>
+                        <h3>Indie</h3>
+                    </a>
+
+                    <!-- CARD 14 -->
+                    <a href="" class="cards">
+                        <div class="play">
+                            <img src="./assets/playlist/14.jpeg" alt="" />
+                            <i class="bi bi-play-circle-fill player"></i>
+                        </div>
+                        <h3>Relax</h3>
+                    </a>
+
+                    <!-- CARD 15 -->
+                    <a href="" class="cards">
+                        <div class="play">
+                            <img src="./assets/playlist/15.jpeg" alt="" />
+                            <i class="bi bi-play-circle-fill player"></i>
+                        </div>
+                        <h3>Música Latina</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!--Script resultados da Busca-->
+            <div class="search_results">
+                <div class="results_content" id="results_content">
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="bg_footer" id="bg_footer">
+
+            <div class="footer_header">
+                <h3>TESTAR PREMIUM DE GRAÇA</h3>
+                <i class="bi bi-x-lg" onclick="close_footer()"></i>
+            </div>
+
+            <div class="footer_main">
+                <h4>
+                    Inscreva-se para curtir músicas ilimitadas e podcasts só com alguns anúncios. Não precisa de cartão
+                    de crédito.
+                </h4>
+
+                <button>Inscreva-se</button>
+
+            </div>
+        </section>
+    </footer>
+
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+
+</html>
