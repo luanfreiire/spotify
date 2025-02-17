@@ -57,7 +57,7 @@ fetch("database/artists.json")
                 `;
                 results_content.insertAdjacentHTML("beforeend", html_injection);
                 results_content.style.display = "grid";
-                results_content.style.gridTemplateColumns = "1fr 1fr 1fr 1fr 1fr";
+                results_content.style.gridTemplateColumns = "1fr 1fr 1fr";
             });
 
             if (filter_artists.length === 0) {
@@ -105,3 +105,6 @@ close_footer = () => {
 
     bg_footer.style.display = "none";
 }
+
+//RESULTADOS DE ARTISTAS ESTOURANDO A PÁGINA !!!!!!!!!!!!!!//
+//TAMANHO DAS IMAGENS DO RESULTADO PEQUENAS//
