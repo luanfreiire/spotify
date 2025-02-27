@@ -20,4 +20,4 @@ https://spotifyalura.netlify.app/
   <p>Este projeto web, inspirado no Spotify, foi desenvolvido exclusivamente para fins educacionais, como parte de um exercício de aprendizado e aprimoramento de habilidades
     em HTML, CSS e JavaScript. O objetivo principal deste projeto é demonstrar a aplicação prática de conceitos e técnicas de desenvolvimento web, e não há intenção de obter
     lucro financeiro com o mesmo.
-    Este projeto não tem como finalidade substituir ou infringir os direitos autorais do Spotify ou de qualquer outra entidade</p>
+    Este projeto não tem como finalidade substituir ou infringir os direitos autorais do Spotify ou de qualquer outra entidade.</p>
